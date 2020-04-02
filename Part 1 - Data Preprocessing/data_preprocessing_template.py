@@ -7,7 +7,11 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Data.csv')
+# x for independent variable
+# [:] give all rows , [:-1] except this row so [:,:-1] this refer to get the values except last row
 X = dataset.iloc[:, :-1].values
+# y for dependent variable
+# give all c aols and third col
 y = dataset.iloc[:, 3].values
 
 # Splitting the dataset into the Training set and Test set
